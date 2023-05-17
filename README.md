@@ -16,3 +16,8 @@
     alternativa 3*) π Nomc (σ Nomd ='Fútbol' (PRAC⨝CLUB⨝DEPO))
 9*) CC= π Codc,Nomc CLUB
     π Dni, Nom, Nomd, Nomc (PRAC⨝PERS⨝DEPO⨝CC)    
+10*) COD1= σ Codd='D01' PRAC
+     COD2= σ Codd='D22' PRAC
+     COD3= σ Codd='D10' PRAC
+     π Dni,Nom ((COD1 ∩ COD2 ∩ COD3) ⨝ PERS)
+11*)     
