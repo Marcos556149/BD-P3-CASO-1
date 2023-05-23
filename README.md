@@ -21,3 +21,17 @@
      COD3= σ Codd='D10' PRAC
      π Dni,Nom ((COD1 ∩ COD2 ∩ COD3) ⨝ PERS)
 11*)     
+15*)AnaG= ρAG(πEdad σ Dni=18498425 PERS)
+    π Dni,Nom (AnaG ⨝ AG.Edad < PERS.Edad PERS)
+    o tambien*) AnaG= ρAnaG(πEdad σ Dni=18498425 PERS)
+                π Dni,Nom (AnaG ⨝ AnaG.Edad < PERS.Edad PERS)
+18*) alternativa 1*) π Nomd ((π Codd,Codc PRAC ÷ π Codc CLUB) ⨝ DEPO)
+     alternativa 2*) A= π Codc CLUB
+                     π Nomd ((π Codd,Codc PRAC ÷ A) ⨝ DEPO)
+19*)A=π Codd(σ Clase='Balón' DEPO)
+    π Codc,Codd PRAC ÷ A
+20*) alternativa 1*) (π Dni,Codd PRAC ÷ π Codd DEPO) ⨝ PERS
+     alternativa 2*) A=π Codd DEPO
+                     (π Dni,Codd PRAC ÷ A) ⨝ PERS
+21*) A= π Codc σ Nomc='Banco Hispano' CLUB
+     π Nom ((π Dni,Codd PRAC ÷ (π Codd,Codc PRAC ÷ A)) ⨝ PERS)                     
