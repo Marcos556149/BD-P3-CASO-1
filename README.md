@@ -20,7 +20,11 @@
      COD2= σ Codd='D22' PRAC
      COD3= σ Codd='D10' PRAC
      π Dni,Nom ((COD1 ∩ COD2 ∩ COD3) ⨝ PERS)
-11*)     
+11*)
+12*) alternativa 1*) A= π Codc σ Nomc='Ausonia' CLUB
+                     B= π Codc σ Nomc='UVT' CLUB
+                     π Dni ((A ⨝ PRAC)∪(B ⨝ PRAC))
+     alternativa 2*) π Dni (π Codc (σ Nomc ='Ausonia' ∨ Nomc ='UVT' CLUB) ⨝ PRAC)                
 15*)AnaG= ρAG(πEdad σ Dni=18498425 PERS)
     π Dni,Nom (AnaG ⨝ AG.Edad < PERS.Edad PERS)
     o tambien*) AnaG= ρAnaG(πEdad σ Dni=18498425 PERS)
